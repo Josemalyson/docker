@@ -1,0 +1,8 @@
+version: '3.3'
+services: 
+  oracle:
+    container_name: oracle
+    image: toneloc01/oracle-xe-11g:latest
+    ports: 
+      - '8081:8080'
+      - '1521:1521'
