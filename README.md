@@ -1,2 +1,2 @@
 # docker
-aprendendo sobre a tecnolgia
+aprendendo sobre a tecnologia
