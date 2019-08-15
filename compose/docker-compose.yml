@@ -16,3 +16,15 @@ services:
       - '50000:50000'
     volumes: 
       - './jenkins:/var/jenkins_home'
+  sonar:
+    container_name: sonar
+    image: sonarqube:lts
+    ports:
+      - '9000:9000'
+  apache:
+    container_name: apache
+    image: httpd:latest
+    ports:
+      - '8083:80'
+    volumes:
+      - '/home/josemalyson/Documentos/cadastro_versao/VERSAO/cadastro-web/dist:/usr/local/apache2/htdocs/'
