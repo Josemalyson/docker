@@ -10,7 +10,7 @@ services:
       - './oracle:/u01/app/oracle'
   jenkins:
     container_name: jenkins
-    image: jenkins/jenkins:lts
+    image: jenkinsci/blueocean:latest
     ports:
       - '8082:8080'
       - '50000:50000'
