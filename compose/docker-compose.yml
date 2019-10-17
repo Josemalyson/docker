@@ -12,7 +12,9 @@ services:
       - './oracle:/u01/app/oracle'
   jenkins:
     container_name: jenkins
-    image: jenkinsci/blueocean:latest
+    build: 
+      context: './imagens/jenkins/'
+      dockerfile: '.'
     networks: 
       - infraestrutura
     ports:
